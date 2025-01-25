@@ -17,9 +17,7 @@ int ramp(vector<int> nums)
     }
     return maxi;
 }
-
 // better approach;
-
 class Solution
 {
 public:

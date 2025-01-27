@@ -3,16 +3,18 @@
 using namespace std;
 
 int duplicate(vector<int> nums){
-    int j=1,i=0;
-    while(j<nums.size()){
+    int i=0;
+    int j=1;
+    while(j>i){
         if(nums[i]!=nums[j]){
             i++;
-            nums[i]= nums[j];
-            
+            nums[i]=nums[j];
+        } else{
+            j++;
         }
-        j++;
     }
-    return i+1;//(length return karni hai)
+    
+    //(length return karni hai)
 }
 int main(){
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
